@@ -14,6 +14,7 @@ import Experience from './components/Experience';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Education from './components/Education';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -69,12 +70,13 @@ export default function App() {
         <Loader onComplete={() => setLoading(false)} />
       ) : (
         <div className="relative w-full min-h-screen selection:bg-[#0047FF] selection:text-white">
-          <CustomCursor />
+          
           <Navbar />
           <main>
             <Hero />
             <Marquee />
             <About />
+            <Education />
             <Projects />
             <Research />
             <Experience />

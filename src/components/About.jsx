@@ -1,10 +1,11 @@
 import React from 'react';
 
-const LANGUAGES = ['Python', 'JavaScript', 'Java', 'SQL', 'C', 'TypeScript'];
+const LANGUAGES = ['Python', 'JavaScript', 'Java', 'SQL', 'C', 'TypeScript' ,'Matlab' ,'Linux'];
 const FRONTEND = ['ReactJS', 'HTML5', 'CSS3', 'TailwindCSS', 'Bootstrap'];
-const BACKEND = ['NodeJS', 'ExpressJS', 'FastAPI', 'Flask', 'REST APIs', 'MongoDB', 'MySQL'];
+const BACKEND = ['NodeJS', 'ExpressJS', 'FastAPI', 'Flask', 'REST APIs', 'MongoDB', 'MySQL' ,'DJANGO'];
 const AI_ML = ['TensorFlow', 'Scikit-Learn', 'CNN', 'NLP', 'Deep Learning', 'Explainable AI', 'SHAP', 'LIME'];
 const DEVOPS_TOOLS = ['Docker Basics', 'n8n Workflow', 'AWS Basics', 'Git/GitHub', 'Postman', 'Figma'];
+const OTHER_TOOLS =['Excel' ,'Latex' , 'Jupyter Notebooks', 'VS Code', 'Google Colab', 'Canva'];
 
 export default function About() {
   return (
@@ -47,7 +48,8 @@ export default function About() {
           { title: 'AI / Machine Learning / XAI', tags: AI_ML },
           { title: 'Backend / Databases', tags: BACKEND },
           { title: 'Frontend Systems', tags: FRONTEND },
-          { title: 'Cloud & Workflow Automation', tags: DEVOPS_TOOLS }
+          { title: 'Cloud & Workflow Automation', tags: DEVOPS_TOOLS },
+          { title: 'Other Tools & Platforms', tags: OTHER_TOOLS }
         ].map((group, gIdx) => (
           <div key={gIdx}>
             <div className="font-mono text-[11px] tracking-[0.15em] uppercase text-[#6B6560] mb-4 pb-2 border-b border-[#1A1814]/12">
